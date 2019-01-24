@@ -2,6 +2,8 @@ FROM openjdk:8-jre
 
 LABEL maintainer="support@larvacent.com"
 
+ARG APOLLO_VERSION
+
 ENV APOLLO_VERSION=${APOLLO_VERSION:-1.7.1}
 
 RUN set -x \
